@@ -1,0 +1,60 @@
+.offer {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    margin: auto;
+    padding: 0px 184px;
+    margin-bottom: 50px;
+    background: #f5f7f9;
+}
+
+.offer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offer-left h1 {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.offer-left p {
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.offer-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offer-right {
+    display: flex;
+}
+
+@media only screen and (min-width:320px) and (max-width:720px){
+
+    .offer{
+        flex-direction: column;
+        padding: 40px 30px;
+        margin-bottom: 50px;
+    }
+
+
+    .offer-left h1{
+        font-size: 50px;
+    }
+
+}

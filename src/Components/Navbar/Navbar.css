@@ -1,0 +1,122 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+} 
+
+.nav-logo a{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.nav-logo a img{
+    width:20%
+}
+
+.nav-logo p{
+    color: #171717;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    width: 30px;
+    margin-top: -10px;
+}
+
+.login-btn{
+    position: absolute;
+    right: 30px;
+}
+
+.login-btn button{
+    width: 72px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.login-btn button:active{
+    background-color: #f3f3f3;
+}
+
+.nav-cart-count{
+    width: 22px;
+    height: 19px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -55px;
+    border-radius: 50%;
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:720px){
+    .nav-menu{
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 35px;
+        margin-top: 19px;
+        gap: 20px;
+    }
+
+    .login-btn{
+        position: relative;
+        right: 0;
+    }
+
+    .nav-login-cart{
+    /* border: 1px solid; */
+    width: 82%;
+    margin: 10px auto;
+    justify-content: end;
+    }
+}

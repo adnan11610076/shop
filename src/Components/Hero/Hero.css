@@ -1,0 +1,89 @@
+.hero{
+    height: 100vh;
+    /* background: linear-gradient(180deg, #fde1ff,transparent); */
+    display: flex;
+    background: url('C:\Users\adnan\OneDrive\Desktop\React\Ecommerce\frontend\src\Components\Assets\hero-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.hero-left{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap:20px;
+padding-left: 180px;
+line-height: 1.1;
+}
+
+.hero-left h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.hero-left p{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img{
+    width: 90px;
+}
+
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-latest-btn:hover{
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+    .hero {
+        display: block ;
+        height: 90vh ;
+        padding: 40px 30px ;
+    }
+
+    .hero-left {
+        padding-left: 0 ;
+       
+    }
+
+    .hero-left p {
+        font-size: 65px ;
+    }
+}
