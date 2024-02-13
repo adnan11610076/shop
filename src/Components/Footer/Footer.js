@@ -8,6 +8,11 @@ import { Link } from "react-router-dom";
 
 
 const Footer = () => {
+
+    const HandleClick=()=>{
+        console.log("hello world");
+    }
+
     return (
         <>
             <div className="footer">
@@ -20,7 +25,7 @@ const Footer = () => {
                     <li >Company</li>
                     <li >Products</li>
                     <li>Offices</li>
-                    <li>About</li>
+                    <li><Link to='/about'  onClick={window.scrollTo(0,0)}>About</Link></li>
                     <li>Contact</li>
                 </ul>
                 <div className="footer-social-icon">

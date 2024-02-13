@@ -1,0 +1,43 @@
+.wishlist-items {
+    padding: 20px;
+}
+
+.wishlist-items h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cartitems-format {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartitems-format-main {
+    margin-bottom: 10px;
+}
+
+.carticon-product-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cartitems-remove-item {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cartitems-quantity {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.whislist button{
+    border: none;
+    background: transparent;
+}

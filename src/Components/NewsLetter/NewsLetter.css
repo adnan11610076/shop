@@ -8,18 +8,18 @@
     margin: auto;
     padding: 50px 140px;
     margin-bottom: 50px;
-    background: linear-gradient(180deg, #fde1ff, transparent);
+    background: linear-gradient(180deg, #4169e1, transparent);
     gap: 30px;
 }
 
 .newsletter h1 {
-    color: #454545;
+    color: #fff;
     font-size: 55px;
     font-weight: 600;
 }
 
 .newsletter p {
-    color: #454545;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -73,7 +73,7 @@
 
     .newsletter input{
         width: 100%;
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
     .newsletter div button{

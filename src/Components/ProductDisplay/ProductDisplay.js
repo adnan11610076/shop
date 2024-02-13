@@ -9,6 +9,7 @@ const ProductDisplay = (props) => {
 
     const { product } = props;
     const { addToCart } = useContext(ShopContext);
+   
 
     const [selectedSize, setSelectedSize] = useState(null);
     // Function to handle adding to cart
@@ -16,6 +17,7 @@ const ProductDisplay = (props) => {
         // Check if size is selected
         if (selectedSize) {
             addToCart(product.id);
+            // console.log("hello product");
         } else {
             // Display popup message if size is not selected
             alert("Please select the size");

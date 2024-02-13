@@ -4,11 +4,13 @@ import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import heart_img from "../Assets/heart-img.png";
 
 const Navbar = () => {
 
     const [menu, setMenu] = useState("shop");
     const { getTotalCartItems } = useContext(ShopContext);
+    const {getTotalWishlistItems}= useContext(ShopContext);
 
     return (
         <>
@@ -30,6 +32,13 @@ const Navbar = () => {
 
                     <li className="login-btn nav-item"><Link to='/login'> <button>Login</button></Link></li>
                 </ul>
+
+                <div className="nav-whislist">
+                    <Link to="/wishlist">
+                        <img src={heart_img } alt="" />
+                    </Link>
+                    <div className="wishlist-count">{getTotalWishlistItems()}</div>
+                </div>
 
                 <div className="nav-login-cart">
 

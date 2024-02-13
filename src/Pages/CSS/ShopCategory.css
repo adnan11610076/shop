@@ -16,10 +16,34 @@
 }
 
 .shopcategory-sort {
-
+position: relative;
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid #888;
+    cursor: pointer;
+}
+.shopcategory-sort .sort-list{
+    position: absolute;
+    z-index: 1;
+    padding: 0px;
+    width: 100%;
+    left: 0;
+    top: 47px;
+    text-align: center;
+    display: none;
+}
+
+.sort-list .sort-list-item{
+    list-style: none;
+}
+.sort-list .sort-list-item:hover{
+    background-color: #e2e2e2e8;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.sort-list.show {
+    display: block; /* Display the list when the show class is present */
 }
 
 .shopcategory-products {
