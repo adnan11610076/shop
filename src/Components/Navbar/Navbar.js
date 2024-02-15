@@ -5,6 +5,7 @@ import cart_icon from '../Assets/cart_icon.png'
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 import heart_img from "../Assets/heart-img.png";
+import shop_img from "../Assets/shop.png";
 
 const Navbar = () => {
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <>
             <div className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="navbar-brand nav-logo">
-                    <Link to='/'><img src={logo} alt="logo" />
+                    <Link to='/' onClick={() => setMenu("shop")}><img src={logo} alt="logo" />
                         <p>SHOPPER</p></Link>
                 </div>
 
@@ -25,7 +26,7 @@ const Navbar = () => {
                 </button>
 
                 <ul className="nav-menu collapse navbar-collapse" id="navbarSupportedContent">
-                    <li onClick={() => { setMenu("shop") }} className="nav-item"><Link to="/" style={{ textDecoration: "none" }}>Shop</Link>{menu === "shop" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("shop") }} className="nav-item"><Link to="/" style={{ textDecoration: "none" }}><img src={shop_img} alt="" /></Link>{menu === "shop" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("mens") }} className="nav-item"><Link to="/mens" style={{ textDecoration: "none" }}>Men</Link> {menu === "mens" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("womens") }} className="nav-item"><Link to="/womens" style={{ textDecoration: "none" }}>Women</Link>  {menu === "womens" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("kids") }} className="nav-item"><Link to="/kids" style={{ textDecoration: "none" }}>Kids</Link> {menu === "kids" ? <hr /> : <></>}</li>

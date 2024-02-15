@@ -11,9 +11,9 @@ const Items = (props) => {
 
 
     const handleAddToWishlist = () => {
-      
+
         addToWishlist(props.id);
-      
+
     };
 
     return (
@@ -21,16 +21,17 @@ const Items = (props) => {
 
             <div className="item">
 
-               <Link to={`/product/${props.id}`}> <img onClick={window.scrollTo(0,0)} src={props.image} alt="" /></Link>
+                <div className="item-img">
+                    <Link to={`/product/${props.id}`}> <img onClick={window.scrollTo(0, 0)} src={props.image} alt="" /></Link></div>
                 <p>{props.name}</p>
-                <div className="whislist"><button onClick={handleAddToWishlist}><img src={props.image1} alt=""/></button></div>
+                <div className="whislist"><button onClick={handleAddToWishlist}><img src={props.image1} alt="" /></button></div>
                 <div className="item-prices">
                     <div className="item-price-new">
-                    ₹{props.new_price}
+                        ₹{props.new_price}
                     </div>
 
                     <div className="item-price-old">
-                    ₹{props.old_price}
+                        ₹{props.old_price}
                     </div>
                 </div>
 

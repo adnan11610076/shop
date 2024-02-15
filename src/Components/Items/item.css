@@ -1,6 +1,22 @@
 .item{
     width: 270px;
+position: relative;
+}
+.item-img{
     position: relative;
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+
+.item-img img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+ 
+}
+.item-img img:hover{
+
+    transform: scale(1.1)
+
 }
 
 .item p{
@@ -15,7 +31,7 @@
 }
 .item:hover .whislist{
     transition: .5s all ease-in;
-display: block;
+    display: block;
 }
 
 .whislist img{
@@ -38,11 +54,4 @@ display: block;
     font-size: 18px;
     font-weight: 500;
     text-decoration: line-through;
-}
-
-.item:hover{
-
-    transform: scale(1.05);
-    transition: 0.6s;
-
 }

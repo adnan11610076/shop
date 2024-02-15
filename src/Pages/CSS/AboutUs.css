@@ -10,6 +10,7 @@
 
 .about-us-content p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about-us-content p:last-child {

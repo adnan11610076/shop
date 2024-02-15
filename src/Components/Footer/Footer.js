@@ -9,9 +9,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
 
-    const HandleClick=()=>{
-        console.log("hello world");
-    }
+
 
     return (
         <>
@@ -25,7 +23,7 @@ const Footer = () => {
                     <li >Company</li>
                     <li >Products</li>
                     <li>Offices</li>
-                    <li><Link to='/about'  onClick={window.scrollTo(0,0)}>About</Link></li>
+                    <li><Link to='/about'  onClick={()=>window.scrollTo(0,0)}>About</Link></li>
                     <li>Contact</li>
                 </ul>
                 <div className="footer-social-icon">
@@ -46,7 +44,7 @@ const Footer = () => {
 
                 <div className="footer-copyright">
                     <hr />
-                    <p>copyright @ 2024 - ALL RIGHT RESERVED</p>
+                    <p>copyright@2024 - ALL RIGHT RESERVED</p>
                 </div>
             </div >
         </>
