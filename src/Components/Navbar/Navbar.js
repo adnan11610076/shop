@@ -17,7 +17,7 @@ const Navbar = () => {
         <>
             <div className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="navbar-brand nav-logo">
-                    <Link to='/' onClick={() => setMenu("shop")}><img src={logo} alt="logo" />
+                    <Link to='/shop' onClick={() => setMenu("shop")}><img src={logo} alt="logo" />
                         <p>SHOPPER</p></Link>
                 </div>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </button>
 
                 <ul className="nav-menu collapse navbar-collapse" id="navbarSupportedContent">
-                    <li onClick={() => { setMenu("shop") }} className="nav-item"><Link to="/" style={{ textDecoration: "none" }}><img src={shop_img} alt="" /></Link>{menu === "shop" ? <hr /> : <></>}</li>
+                    <li onClick={() => { setMenu("shop") }} className="nav-item"><Link to="/shop" style={{ textDecoration: "none" }}><img src={shop_img} alt="" /></Link>{menu === "shop" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("mens") }} className="nav-item"><Link to="/mens" style={{ textDecoration: "none" }}>Men</Link> {menu === "mens" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("womens") }} className="nav-item"><Link to="/womens" style={{ textDecoration: "none" }}>Women</Link>  {menu === "womens" ? <hr /> : <></>}</li>
                     <li onClick={() => { setMenu("kids") }} className="nav-item"><Link to="/kids" style={{ textDecoration: "none" }}>Kids</Link> {menu === "kids" ? <hr /> : <></>}</li>
